@@ -97,8 +97,8 @@ For the challenges, I suggest you open a repo, and save them all there.
     - has a title, a text input and a button
     - when a user types something in the input, and clicks the button, it should change the title to what the user type
     - add another button to the html that will change the colour of the title
-- [ ] Why should we always use `eventListeners` in Javascript and not inline `onClick` handlers in the HTML? 
-
+- [X] Why should we always use `eventListeners` in Javascript and not inline `onClick` handlers in the HTML? 
+	* onclick is an attribute excute it multiple time will encount as one execution and ovewrite all previous ones, while addEventListener is a function and you can have multiple ones.
 ---
 
 ### HTML/CSS
