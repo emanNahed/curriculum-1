@@ -38,7 +38,7 @@ For the challenges, I suggest you open a repo, and save them all there.
 	* what is github? website provide cloud based git repository
 - [X]  What happens when you `clone` a repository?
 	* you have a local copy of the remote repository
-- [/] What happens when you `fork` a repository?
+- [X] What happens when you `fork` a repository?
  	* create remote copy from a repository and have full control to the forked repository.
 - [X] What happens when we do `git pull origin master`
 	* it'll pull change from remote branch called master and merge it to checked out branch.
