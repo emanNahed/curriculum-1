@@ -31,15 +31,34 @@ For the challenges, I suggest you open a repo, and save them all there.
 ---
 
 ### Github
-- [ ] Why do we use github/git?
-- [ ]  What happens when you `clone` a repository?
-- [ ] What happens when you `fork` a repository?
-- [ ] What happens when we do `git pull origin master`
-- [ ] How do we create a new branch on our local machine?
-- [ ] When we make a change to a file, how do we tell git to track it?
-- [ ] When we have finished working on a branch, how do we make sure that our changes do not cause a conflict with master? (this can all be done **locally**)
-- [ ] What does `git push origin [branch-name]` do?
-- [ ] Why do we make pull requests instead of just changing master directly?
+- [X] Why do we use github/git?
+	* git is a distributed virsion control system,
+	* what is version control: track history of changes
+	* what is distributed? you don't have to connect to repository constantly, you can access it anywhere any time
+	* what is github? website provide cloud based git repository
+- [X]  What happens when you `clone` a repository?
+	* you have a local copy of the remote repository
+- [/] What happens when you `fork` a repository?
+ 	* create remote copy from a repository and have full control to the forked repository.
+- [X] What happens when we do `git pull origin master`
+	* it'll pull change from remote branch called master and merge it to checked out branch.
+	* for git push origin/master it'll pull change from local branch called master and merge changes to checkout branch.
+ 	* origin/master is a local branch save last pull change from master remote branch.
+	* [link](https://git-scm.com/book/id/v2/Git-Branching-Remote-Branches)
+- [X] How do we create a new branch on our local machine?
+	* answer: 
+	``` 
+	git checkout -b newBranch
+	```
+- [X] When we make a change to a file, how do we tell git to track it?
+	* ``` git add fileName ```
+	* read from this [link](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
+- [X] When we have finished working on a branch, how do we make sure that our changes do not cause a conflict with master? (this can all be done **locally**)
+	* use ``` git status ``` and ``` git diff ```
+- [X] What does `git push origin [branch-name]` do?
+	* update remote branch with local commits.
+- [X] Why do we make pull requests instead of just changing master directly?
+	* ask other contributers to review the code and approve it or write issues and cimments
 - [ ] Why is it important to run our team member's branches when they make a pull request?
 - [ ] This is the working process you should follow, try to explain what happens at each step/why we do it:
     - `git clone [repository]`
